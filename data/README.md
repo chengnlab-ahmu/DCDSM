@@ -31,12 +31,3 @@ python scripts/run_evaluate.py \
 
 The script will automatically reload the `train_*.csv` files to reconstruct the scaler used for normalization. It will **not** fit a new scaler on the new test set, which is important. See the notes at the top of `src/evaluate.py` for details.
 
-No additional steps are required.
-
-## Why the Data Is Not Included in the Git Repository
-
-See the `.gitignore` file in the repository root.
-
-Medical and research datasets often have privacy or licensing restrictions and can also be large in size, so they are generally not suitable for committing to a public repository. In particular, because the data are derived from HGMD, identifying fields such as `sequence_id` have been removed from all released data files to comply with HGMD data protection and licensing requirements.
-
-This repository only includes the directory structure and this documentation. Please obtain the data through your own authorized data-management channels and place the files in this directory manually.
