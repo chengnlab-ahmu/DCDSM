@@ -1,0 +1,31 @@
+# 数据 (体积大,通常也有隐私/授权限制,不提交到仓库,见 data/README.md)
+data/*.csv
+data/*.tsv
+data/*.h5
+
+# 训练/评估产出 (权重、图表、OOF、预测结果 —— 属于运行结果,不提交)
+outputs/*
+!outputs/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Notebook
+.ipynb_checkpoints/
+
+# 虚拟环境
+.env
+venv/
+.venv/
+env/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
